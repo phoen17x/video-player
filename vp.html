@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VideoPlayer</title>
+    <link rel="stylesheet" href="vp.css" />
+  </head>
+  <body>
+    <div class="video-player">
+      <video
+        src="media/random-video.mp4"
+        poster="media/thumbnail.jpg"
+        class="video"
+      ></video>
+
+      <button class="play-btn" title="Play">
+        <img
+          class="play-btn-icon"
+          src="media/play-icon.png"
+          draggable="false"
+        />
+      </button>
+
+      <div class="player-controls">
+        <button class="volume-btn">
+          <img
+            class="volume-btn-icon"
+            src="media/volume-icon.png"
+            draggable="false"
+          />
+        </button>
+
+        <div class="volume-container">
+          <input
+            type="range"
+            class="volume"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1"
+          />
+        </div>
+
+        <div class="video-progress-container">
+          <input type="range" class="video-progress" step="1" value="0" />
+        </div>
+
+        <div class="time">
+          <span class="current">0:00</span>
+          /
+          <span class="duration">0:00</span>
+        </div>
+
+        <button class="fullscreen-btn">
+          <img
+            class="fullscreen-btn-icon"
+            src="media/fullscreen-icon.png"
+            draggable="false"
+          />
+        </button>
+      </div>
+    </div>
+
+    <script src="vp.js"></script>
+  </body>
+</html>
